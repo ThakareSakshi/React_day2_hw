@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+</head>
+<body >
+    <div id="root"></div>
+    <script >
+        let root=document.getElementById("root");
+        
+        let h1=React.createElement("h1",{},"Topics Covered");
+        let para1=React.createElement("p",null,"Following is the list of topics we cover in MDN learning area.");
+
+
+        // -----------------first  section----------------
+        let gettingstarted=React.createElement("a",{href:"#",style:{display:"block"}},"Getting Started with the web.");
+        let desc1=React.createElement("p",{style:{marginBottom:"20px"}},"Provides a practical introduction ot the web development for complete begginners.")
+
+
+        //--------------------second section----------------------
+        let htmlStructure=React.createElement("a",{href:"#",style:{display:"block"}},"HTML- Structuring the web");
+        let desc2=React.createElement("p",{style:{marginBottom:"20px"}},"HTML is the language that we use to structure the diffrent part of our content and define what their meaning or purpose is. this topic teaches HTMl in detail")
+
+        //----------third section---------------------
+        let cssStructure=React.createElement("a",{href:"#",style:{display:"block"}},"CSS- Styling the web");
+        let desc3=React.createElement("p",{style:{marginBottom:"20px"}},"CSS is the language that we use to control our web content's style and layout as well as adding behaviour as animation.This topic provides comprehensive coverage of CSS.")
+
+        
+        let div=React.createElement("div",{style:{fontSize:"20px",width:"100%",textAlign:"justify"}},h1,para1,gettingstarted,desc1,htmlStructure,desc2,cssStructure,desc3);
+       ReactDOM.render(div,root)
+        
+    
+       
+    </script>
+    
+</body>
+</html>
